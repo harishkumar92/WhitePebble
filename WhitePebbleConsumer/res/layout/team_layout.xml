@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teamAncestor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingBottom="15dp" >
+
+        <include layout="@layout/fixedmenu" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollteam"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/TeamPic"
+                    android:src="@drawable/schneider" />
+
+                <TextView
+                    style="@style/TeamRole"
+                    android:text="Chief Executive Officer" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/TeamPic"
+                    android:src="@drawable/ben" />
+
+                <TextView
+                    style="@style/TeamRole"
+                    android:text="Chief Investment Strategist" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/TeamPic"
+                    android:src="@drawable/bowen" />
+
+                <TextView
+                    style="@style/TeamRole"
+                    android:text="Head of Research" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/TeamPic"
+                    android:src="@drawable/mengdan" />
+
+                <TextView
+                    style="@style/TeamRole"
+                    android:text="Head of Product Development" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/TeamPic"
+                    android:src="@drawable/alex" />
+
+                <TextView
+                    style="@style/TeamRole"
+                    android:text="Head of Trading and Portfolio Analytics" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/TeamPic"
+                    android:src="@drawable/eileen" />
+
+                <TextView
+                    style="@style/TeamRole"
+                    android:text="Chief Operating Office" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/TeamPic"
+                    android:src="@drawable/galligan" />
+
+                <TextView
+                    style="@style/TeamRole"
+                    android:text="Head of Sales" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    style="@style/TeamPic"
+                    android:src="@drawable/harish" />
+
+                <TextView
+                    style="@style/TeamRole"
+                    android:text="Chief Technology Officer" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

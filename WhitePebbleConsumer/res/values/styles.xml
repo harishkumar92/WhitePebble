@@ -1,0 +1,75 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- Custom Style defined for the buttons. -->
+    <style name="FixedMenuStyle">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!-- Custom Style defined for the charts. -->
+    <style name="ChartStyle">
+        <item name="android:layout_width">400dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="HoldingsRowStyle">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SectionTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">45sp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="TeamPic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="TeamRole">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+    <style name="CommonStyle">
+        <item name="android:background">#ffffff</item>
+    </style>
+
+</resources>

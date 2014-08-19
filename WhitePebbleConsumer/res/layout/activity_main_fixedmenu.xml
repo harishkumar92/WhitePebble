@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CommonStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Footer aligned to bottom -->
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:paddingBottom="15dp" >
+
+        <include layout="@layout/fixedmenu" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="Performance" />
+
+            <ImageView
+                android:id="@+id/perfchart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:focusable="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="1m" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3m" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6m" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 yr" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="Top Holdings" />
+
+            <TableLayout
+                android:id="@+id/holdings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="30dp"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    style="@style/HoldingsRowStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:text="Ticker" />
+
+                    <TextView android:text="Weight %" />
+
+                    <TextView android:text="Daily Gain %" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    style="@style/HoldingsRowStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView android:text="ATVI" />
+
+                    <TextView android:text="3.11%" />
+
+                    <TextView android:text="1.23%" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    style="@style/HoldingsRowStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:text="AMZN" />
+
+                    <TextView android:text="3.01%" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="-0.25%" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    style="@style/HoldingsRowStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:text="T" />
+
+                    <TextView android:text="3.97%" />
+
+                    <TextView android:text="-1.52%" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    style="@style/HoldingsRowStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:text="DDS" />
+
+                    <TextView android:text="4.05%" />
+
+                    <TextView android:text="4.05%" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    style="@style/HoldingsRowStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:text="DFS" />
+
+                    <TextView android:text="4.22%" />
+
+                    <TextView android:text="1.05%" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    style="@style/HoldingsRowStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:text="DNKN" />
+
+                    <TextView android:text="5.13%" />
+
+                    <TextView android:text="1.23%" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    style="@style/HoldingsRowStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:text="FL" />
+
+                    <TextView android:text="4.13%" />
+
+                    <TextView android:text="1.43%" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    style="@style/HoldingsRowStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:text="F" />
+
+                    <TextView android:text="4.37%" />
+
+                    <TextView android:text="1.43%" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="#000000" />
+
+                <TableRow
+                    style="@style/HoldingsRowStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView android:text="GPS" />
+
+                    <TextView android:text="4.69%" />
+
+                    <TextView android:text="1.59%" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                style="@style/SectionTitle"
+                android:text="Sector Exposure" />
+
+            <ImageView
+                android:id="@+id/sector_weights_imgview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:focusable="true" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuBar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        style="@style/FixedMenuStyle"
+        android:id="@+id/recentNewsButton"
+        android:src="@drawable/news_launcher"
+        android:onClick="displayRSS" />
+
+    <ImageButton
+        style="@style/FixedMenuStyle"
+        android:id="@+id/performanceButton"
+        android:src="@drawable/performance_launcher"
+        android:onClick="displayPerformance" />
+
+    <ImageButton
+        style="@style/FixedMenuStyle"
+        android:id="@+id/outlookButton"
+        android:src="@drawable/outlook_launcher"
+        android:onClick="displayOutlook" />
+
+    <ImageButton
+        style="@style/FixedMenuStyle"
+        android:id="@+id/teamButton"
+        android:src="@drawable/team_launcher"
+        android:onClick="displayTeam" />
+
+</LinearLayout>
